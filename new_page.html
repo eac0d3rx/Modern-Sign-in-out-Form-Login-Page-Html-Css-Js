@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeni Sayfa</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://i.hizliresim.com/7trvt7w.jpeg'); /* Manzara resmi buraya eklenecek */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .image-container img {
+      width: calc(33.33% - 10px); /* 3 resim yan yana */
+      filter: blur(5px); /* Resimleri ilk olarak bulanık yap */
+      transition: filter 0.3s ease; /* Geçiş efekti için */
+    }
+
+    .image-container img:hover {
+      filter: none; /* Resmin üstüne gelindiğinde bulanıklığı kaldır */
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="https://i.hizliresim.com/mu81bbz.jpeg" alt="Resim 1">
+    <img src="https://i.hizliresim.com/mu81bbz.jpeg" alt="Resim 2">
+    <img src="https://i.hizliresim.com/mu81bbz.jpeg" alt="Resim 3">
+  </div>
+</body>
+</html>
